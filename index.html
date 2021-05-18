@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+    </script>
+    </head>
+  <body>
+      <header>
+        <h1>Formulario</h1>
+      </header>
+      <nav></nav>
+      <section id="content">
+      <form method="post"name="formm1"id="form1">
+        <div id="datosGenerales">
+          <h2>Datos Generales</h2>
+          <p><label for="clave">Cve. Empleado</label>
+          <input type="text" name="clave" id="clave" size="8" maxlength="5" placeholder="Alfanumérico" required>
+          </p>
+          <p><label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" size="20" maxlength="50" placeholder="Nombre(s)" required>
+          </p>
+          <p><label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" size="20" maxlength="80" placeholder="Apellido(s)" required>
+          </p>
+        </div>
+        <div id="datosTrabajo">
+          <h2>Datos Trabajo</h2>
+          <p>
+            <label for="Tipo de empleado">Tipo de empleado</p>
+<p>
+            <input type="text" class="text" name="Tipo de empleado" id="Tipo de empleado" size="20" maxlength="80" placeholder="(Operativo/ Administrativo)" required onchange = "calcularSalario()">
+          </p>
+          <p>
+            <label for="salario">Salario</p>
+<p>
+            <input type="number" class="numero" name="salario" id="salario" size="10" maxlength="10" placeholder="Mayor a cero" required onchange="calcularSalario()">
+          </p>
+          <p>
+            <label for="dias">Días Trabajados</p>
+<p>
+            <input type="number" class="numero" name="dias" id="dias" size="5" maxlength="8" value = "15" placeholder="15" required onchange = "calcularSalario()">
+</p>
+        </div>
+        <div id="sueldo">
+          <h2>Sueldo</h2>
+          <p>
+            <label  for = " Total " > Total $ </label>
+            <input  type = " text " class = " numero " name = " importe " id = " importe " size = " 10 " readonly>
+          </p>
+        </div>
+        <div id="botones">
+          <p><button  onclick = " calcularSalario ()"> Calcular Salario </button>
+          <input type="reset" name="limpiar" id="limpiar" value="Limpiar"></p>
+        </div>
+    <-</form>->
+    </section>
+    <aside>
+      <h2>Barra lateral</h2>
+      <form>
+        <input type="text">
+        <input type="submit" value="Buscar"/>
+        </form>
+        </aside>
+        <div class="clearfix"></div>
+      <footer>
+        Uriel De La Cruz WEB &copy; 2021
+      </footer>
+  </body>
+</html>
